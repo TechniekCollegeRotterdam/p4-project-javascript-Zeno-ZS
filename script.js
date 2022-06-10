@@ -57,7 +57,7 @@ for(s in suits){
         cards.push(card);
     }
 }
-
+// goed gebruik gemaakt van comments!
 function Start() {
     shuffleDeck(cards); //changing order of cards
     dealNew(); //after shuffling deal new deck of cards
@@ -112,6 +112,7 @@ function deal(){
     pValue.innerHTML = playervalue;
 }
 
+// Je hebt een typ fout in de comment hieronder gezet.
 
 function cardOutput(n,x) {  //caard number,  and position the card on top of another 
     let hpos = x > 0 ? x * 60 + 100 : 100  //if not first card, move over the card
@@ -133,7 +134,7 @@ function maxbet() {
     document.getElementById('mybet').value = mydollars;  //take value within mydollars
     message.innerHTML = 'Bet changed to $' + mydollars;
 }
-
+// Mooie code
 //player actions 
 function cardAction(a){
     console.log(a);
@@ -207,7 +208,7 @@ function playend() {
         message.innerHTML = 'Player Blackjack';
         payoutJack = 1.5;
     }
-
+// Dit is allemaal een beetje op elkaar, kan het niet wat beter uitgesprijd worden zodat het makkelijker is om te lezen?
     //determines who won and winnings get calculated
     let betvalue = parseInt(document.getElementById('mybet').value) * payoutJack;
     if ((playervalue < 22 && dealervalue < playervalue) || (dealervalue > 21 && playervalue < 22)) {
@@ -252,6 +253,7 @@ function shuffleDeck(array) {       //shuffle deck
     return array;
 }
 
+// Dit is allemaal een comment, als het niet nodig is kan je het verwijderen.
 
 // function outputCard() {
 // 	output.innerHTML +=
