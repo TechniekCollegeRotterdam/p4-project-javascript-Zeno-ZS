@@ -1,0 +1,141 @@
+
+#output{
+    font-size: 1.5em;
+}
+
+ body{
+ }
+
+/* hides button and hit, double, stand */
+#btndeal, #actions {
+    display: none;
+}
+
+.button {
+    border-radius: 5px;
+    padding: 8px 20px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+/* cover dealer cards */
+#cover{
+    height: 160px;
+    width: 120px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+ /* to show cards */
+
+.icard {
+    height: 160px;
+    width: 120px;
+    padding: 3px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    font-family: 'Lato';
+}
+
+/* top card */
+.top-card {
+    font-size: 30px;
+    line-height: 20px;
+    left: 2px;
+    top: 2px;
+}
+
+.content-card {
+    text-align: center;
+    font-size: 70px;
+}
+
+.bottom-card {
+    font-size: 30px;
+    line-height: 20px;
+    right: 2px;
+    bottom: 2px;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+}
+
+/* style clubs and spades */
+.clubs, .spades {
+    color: black;
+}
+
+/* style hearts and diamonds */
+.hearts, .diamonds {
+    color: red;
+}
+
+.hearts .suit::after {
+    content: '\2665';
+}
+
+.diamonds .suit::after {
+    content: '\2666';
+}
+
+.spades .suit::after {
+    content: '\2660';
+}
+
+.clubs .suit::after {
+    content: '\2663';
+}
+
+#dealerCards, #playerCards{
+    height: 180px;
+    width: 500px;
+}
+
+#message {
+    height: 90px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#btnstand {
+    background-color: green;
+}
+
+#btnhit {
+    background-color: red;
+}
+
+#btndouble {
+    background-color: blue;
+}
+
+#btndeal {
+    background-color: purple;
+    font-size: 50px;
+}
+
+#maxbet {
+    background-color: red;
+    font-size: 12px;
+}
+
+#startbtn {
+    background-color: black;
+}
+
+#mybet {
+    font-size: 30px;
+}
+
+.total {
+    font-size: 30px;
+}

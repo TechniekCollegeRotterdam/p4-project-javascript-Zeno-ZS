@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>BlackJack</h1>/
+            <!-- Game start -->/
+            <div id="message">Press Start Button</div>
+            <div id="start">
+                <button id="startbtn" type="button" onclick="Start()" class="button">Start Game</button>
+            </div>
+            <div class="total">Total $<span id="dollar">100</span><br>Bet amount $<input type="number" id="mybet" 
+                value="50" min="1" max="100">
+                <button id="maxbet" type="button" onclick="maxbet()" class="button">Max Bet</button>
+            </div>
+            <div id="output">
+                <!-- all cards from player and dealer -->
+                Dealer Hand : <span id="dealerValue"></span>
+                <div id="dealerCards"></div>
+                Player Hand : <span id="playerValue"></span>
+                <div id="playerCards"></div>
+
+
+                <!-- buttons for hit, stand, double -->
+                <div id="actions">
+                    <button id="btnstand" type="button" onclick="cardAction('stand')" class="button">Stand</button>
+                    <button id="btnhit" type="button" onclick="cardAction('hit')" class="button">Hit</button>
+                    <button id="btndouble" type="button" onclick="cardAction('double')" class="button">Double Down</button>
+                </div>
+
+                <!-- New game (deal) -->
+                <div>
+                    <button id="btndeal" type="button" onclick="deal()" class="button">Deal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
